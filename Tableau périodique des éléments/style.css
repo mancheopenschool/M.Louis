@@ -1,0 +1,114 @@
+table {
+	width: 100%;
+}
+
+tr {
+	width: 100%;
+}
+
+td {
+	width: 5%;
+	text-align: center;
+	font: 12px arial, sans-serif;
+	font-size: 0.68em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+	h1 {
+		font-size: 1.3em;
+	}
+	.mo {
+		font-size: 0;
+	}
+}
+@media screen and (max-width: 380px) {
+	td {
+		font-size: 0.34em;
+	}
+	.arrow {
+		width: 0;
+	}
+}
+
+.gaz {
+	color: red;
+}
+
+.liq {
+	color: blue;
+}
+
+.ma {
+	 background-color: red;
+}
+
+.at {
+	background-color: #f6e497;
+}
+
+.la {
+	background-color: #fec5fc;
+}
+
+.ac {
+	background-color: #f238eb;
+}
+
+.mt {
+	background-color: #FEB4FE;
+}
+
+.mp {
+	background-color: #cccccc;
+}
+
+.me {
+	background-color: #BD8D46;
+}
+
+.nm {
+	background-color: #b5e655;
+}
+
+.ha {
+	background-color: #F6F650;
+}
+
+.gn {
+	background-color: #01B0F0;
+}
+
+.pr {
+	border-style: solid;
+	border-width: 2px;
+}
+
+.de {
+	border-style: dashed;
+	border-width: 2px;
+}
+
+.sy {
+	border-style: dotted;
+	border-width: 2px;
+}
+.sg1 {
+	border-style: solid;
+	border-color: #FEAEFC;
+}
+.sg2 {
+	border-style: solid;
+	border-color: #ef58ea;
+}
+.arrow {
+	font-size: 2em;
+}
+
+.void {
+
+}

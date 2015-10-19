@@ -1,0 +1,31 @@
+body {
+
+  padding-top: 10px;
+
+}
+
+[class*="col-"], footer {
+
+  background-color: transparent;
+
+
+  border-radius: 6px;
+
+  line-height: 20px;
+
+  text-align: center;
+
+}
+
+h1 {
+	color: #40A465;
+	font-family: serif;
+}
+
+.yoyoyo {
+	background-color: #40A465 !important;
+}
+
+li > a {
+	color: white !important;
+}
