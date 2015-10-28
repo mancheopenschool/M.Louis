@@ -23,7 +23,7 @@ h1 {
 		font-size: 1.3em;
 	}
 	.mo {
-		font-size: 0;
+		display: none;
 	}
 }
 @media screen and (max-width: 380px) {
