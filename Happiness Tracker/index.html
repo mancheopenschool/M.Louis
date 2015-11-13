@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="smiley.png">
+	<title>Happiness Tracker</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="datepicker-fr.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div class="barnav"><img id="imgbulot" src="bulot.png"><h1 id="titremos">Manche Open School - Happiness Tracker</h1></div>
+	<div id="ppltab">
+		<ul>
+			<li><a href="#ppltab-1">Happiness Tracker</a></li>
+			<li><a href="#ppltab-2">Statistiques</a></li>
+			<li><a href="#ppltab-3">Les bons liens</a></li>
+			<li><a href="#ppltab-4">Les élèves</a></li>
+		</ul>
+		<div id="ppltab-1">
+			<form>
+  				<div id="radio">
+    			<input type="radio" id="radio1" name="radio" class="btnradio"><label for="radio1" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/arthur.png" alt=""></label></input>
+    			<input type="radio" id="radio2" name="radio" class="btnradio"><label for="radio2" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/Cyril.png" alt=""></label></input>
+    			<input type="radio" id="radio3" name="radio" class="btnradio"><label for="radio3" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/davidkat.png" alt=""></label></input>
+    			<input type="radio" id="radio4" name="radio" class="btnradio"><label for="radio4" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/guillaume-d.png" alt=""></label></input>
+    			<input type="radio" id="radio5" name="radio" class="btnradio"><label for="radio5" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/guillaume-m.png" alt=""></label></input>
+    			<input type="radio" id="radio6" name="radio" class="btnradio"><label for="radio6" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/guitou.png" alt=""></label></input>
+    			<input type="radio" id="radio7" name="radio" class="btnradio"><label for="radio7" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/gwen.png" alt=""></label></input>
+    			<input type="radio" id="radio8" name="radio" class="btnradio"><label for="radio8" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/louis.png" alt=""></label></input>
+    			<input type="radio" id="radio9" name="radio" class="btnradio"><label for="radio9" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/maryline.png" alt=""></label></input>
+    			<input type="radio" id="radio10" name="radio" class="btnradio"><label for="radio10" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/micka.png" alt=""></label></input>
+    			<input type="radio" id="radio11" name="radio" class="btnradio"><label for="radio11" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/migoo.png" alt=""></label></input>
+    			<input type="radio" id="radio12" name="radio" class="btnradio"><label for="radio12" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/mike.png" alt=""></label></input>
+    			<input type="radio" id="radio13" name="radio" class="btnradio"><label for="radio13" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/phil.png" alt=""></label></input>
+    			<input type="radio" id="radio14" name="radio" class="btnradio"><label for="radio14" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/rishi.png" alt=""></label></input>
+    			<input type="radio" id="radio15" name="radio" class="btnradio"><label for="radio15" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/thomas.png" alt=""></label></input>
+    			<input type="radio" id="radio16" name="radio" class="btnradio"><label for="radio16" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/valentin.png" alt=""></label></input>
+    			<input type="radio" id="radio17" name="radio" class="btnradio"><label for="radio17" onmouseover="ouvreFiche('1')" onmouseout="fermFiche('1')" onclick="fermeFiche('1')"><img class="bouton" src="avatars/vincent.png" alt=""></label></input>
+  				</div>
+			</form>
+			<div id="calendrier"></div>
+			<p>
+  				<label for="amountgc">Growth in code : </label>
+  				<input type="text" id="amountgc" readonly style="border:0; font-weight:bold;">
+			</p>
+			<div id="gcode" class="slidebar"></div>
+			<p>
+  				<label for="amounthc">Happiness in code : </label>
+  				<input type="text" id="amounthc" readonly style="border:0; font-weight:bold;">
+			</p>
+			<div id="hcode" class="slidebar"></div>
+			<p>
+  				<label for="amounthl">Happiness in life : </label>
+  				<input type="text" id="amounthl" readonly style="border:0; font-weight:bold;">
+			</p>
+			<div id="hlife" class="slidebar"></div>
+			<div id="commentaire"><h3>Cliquer pour ajouter un commentaire</h3><div><label for="comm">Votre commentaire : </label><textarea id="comm" title="Tapez votre commentaire ici" rows="5" cols="100"></textarea></div></div>
+			<button id="check">Valider</button>
+			<div id="dialog-confirm" class="boxmodal" title="Êtes-vous sûr d'avoir indiqué les bonnes informations ?">
+  				<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>En validant, les informations que vous aurez renseigné seront enregistrées et ne pourront plus être modifiées !<p id="result"></p></p>
+			</div>
+			<div id="dialog-valid" class="boxmodal" title="Bravo !"></div>
+		</div>
+		<div id="ppltab-2"><p></p></div>
+		<div id="ppltab-3">
+			<h2>La Manche Open School</h2>
+			<ul>
+				<li><a href="http://www.mancheopenschool.fr/">Le site</a></li>
+				<li><a href="http://mancheopenschool.hol.es/">Le forum</a></li>
+			</ul>
+			<h2>Linux</h2>
+			<ul>
+				<li><a href="https://openclassrooms.com/courses/reprenez-le-controle-a-l-aide-de-linux">Cours Open Classroom</a></li>
+				<li><a href="http://wiki.linux-france.org/wiki/Les_commandes_fondamentales_de_Linux">Les commandes fondamentales de Linux</a></li>
+			</ul>
+			<h2>Framework</h2>
+			<ul>
+				<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+				<li><a href="http://jquery.com/">jQuery</a></li>
+				<li><a href="http://jqueryui.com/">jQuery UI (User Interface)</a></li>
+			</ul>
+		</div>
+		<div id="ppltab-4">
+			<div id="eleves">
+				<h3>Arthur</h3>
+				<div><img src="avatars/arthur.png" alt="">Arthur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius quidem minus aliquam sunt laudantium, nesciunt optio, officia iure, at amet adipisci totam aliquid illo! Deserunt perferendis dolor, quia esse.</div>
+				<h3>Cyril</h3>
+				<div><img src="avatars/Cyril.png" alt="">Cyril Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem omnis debitis repellendus modi at qui error neque dolor sapiente eius, cum culpa est, quibusdam voluptates consectetur, ab maxime odit perspiciatis.</div>
+				<h3>David</h3>
+				<div><img src="avatars/davidkat.png" alt="">David Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, amet asperiores quibusdam eaque, voluptates rem consequatur porro aliquid. Rerum iste eum tempore fugiat laudantium sed at, quae, ipsam dolor consequatur.</div>
+				<h3>Guillaume D</h3>
+				<div><img src="avatars/guillaume-d.png" alt="">Guillaume Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus impedit, ullam qui ipsam! Amet, vel. Sit cumque repudiandae optio sunt aliquam repellat. Officiis quam, doloremque nostrum delectus inventore veniam ex.</div>
+				<h3>Guillaume F</h3>
+				<div><img src="avatars/guitou.png" alt="">Guitou Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias porro, facere molestiae, animi earum, optio repellat pariatur dolorum quo laboriosam dolorem sed eaque similique? Quaerat aperiam cumque quia fugit aliquid!</div>
+				<h3>Guillaume M</h3>
+				<div><img src="avatars/guillaume-m.png" alt="">Guillaume Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quam repellendus nobis, rerum praesentium omnis! Qui, illo debitis impedit! Enim tempora, corrupti excepturi sapiente ea molestias nisi eos nam aliquam.</div>
+				<h3>Gwen</h3>
+				<div><img src="avatars/gwen.png" alt="">Gwen Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel similique ratione magni officia mollitia earum, commodi sit soluta sequi expedita vero sint fugiat aut maxime nisi esse! Perferendis, aut aliquid?</div>
+				<h3>Louis</h3>
+				<div><img src="avatars/louis.png" alt="">Louis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid suscipit velit itaque, nam eum doloribus iure. Quos vitae at doloribus recusandae iste atque rerum, nihil, hic consequuntur commodi alias, inventore.</div>
+				<h3>Maryline</h3>
+				<div><img src="avatars/maryline.png" alt="">Maryline Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatem accusantium odio autem officia dolor illum ratione sequi. Voluptatum illum neque nihil ipsa ut sapiente enim qui assumenda, velit provident!</div>
+				<h3>Mickaël G</h3>
+				<div><img src="avatars/micka.png" alt="">Michaël Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eaque distinctio iste in quia laborum nisi quibusdam, quas perspiciatis, vero provident, magnam pariatur eos, tenetur consequuntur cupiditate modi? Veniam, impedit.</div>
+				<h3>Mickaël R</h3>
+				<div><img src="avatars/mike.png" alt="">Mickaël Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat asperiores quibusdam, quam nihil voluptas quae modi, magnam iure quos. Nobis amet aperiam, corrupti. Autem maiores cum, adipisci esse dolor, cupiditate.</div>
+				<h3>Miguel</h3>
+				<div><img src="avatars/migoo.png" alt="">Miguel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem optio nesciunt sint earum ipsum dolores minima voluptas illum nobis similique. Natus explicabo expedita illum porro non a eligendi dolore sapiente?</div>
+				<h3>Philippe</h3>
+				<div><img src="avatars/phil.png" alt="">Philippe Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eligendi sit, libero. Qui dolor dicta voluptate provident vitae totam numquam ea repellendus, hic exercitationem aliquid repellat, quas esse accusantium architecto.</div>
+				<h3>Rishi</h3>
+				<div><img src="avatars/rishi.png" alt="">Rishi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde commodi harum aliquid nisi deleniti, atque dolores praesentium, rem nobis voluptatem veniam et esse animi, maiores fugit ab. Minima, ut, sequi?</div>
+				<h3>Thomas</h3>
+				<div><img src="avatars/thomas.png" alt="">Thomas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, illum! Voluptates accusamus, praesentium et magnam consectetur unde necessitatibus numquam alias, animi doloribus maiores voluptatibus ex hic vitae dolore nobis explicabo!</div>
+				<h3>Valentin</h3>
+				<div><img src="avatars/valentin.png" alt="">Valentin Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio id unde assumenda harum placeat est ex voluptatibus ipsum, magnam. Magnam nostrum ex enim ut doloribus eligendi laudantium officia, laboriosam corporis!</div>
+				<h3>Vincent</h3>
+				<div><img src="avatars/vincent.png" alt="">Vincent Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum molestiae cupiditate dignissimos neque optio, accusantium veniam nihil a ad consectetur. Culpa tenetur nobis rem sint illum aliquid pariatur necessitatibus voluptatem.</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
